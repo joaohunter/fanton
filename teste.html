@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html ng-app="modalMod">
+
+<head>
+    <title>Angular JS</title>
+</head>
+
+<body ng-controller="modalControl">
+    <header>
+        <h2>{{name}}</h2>
+        <h2>{{user}}</h2>
+        <h2>{{pwd}}</h2>
+    </header>
+    <script src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript">
+        angular.module("modalMod", [])
+        .controller("modalControl", function ($scope) {
+        $scope.name = "oioioi";
+        $scope.user = "abigail";
+        $scope.pwd = "123";
+        })
+    </script>      
+</body>
+
+</html>
